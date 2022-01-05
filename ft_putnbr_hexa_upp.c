@@ -6,13 +6,30 @@
 /*   By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 13:36:23 by sle-huec          #+#    #+#             */
-/*   Updated: 2021/12/31 15:19:05 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/05 14:11:57 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include "libft.h"
 
-void	ft_putnbr_hexa_upp(unsigned int n)
+int	ft_ct(unsigned int n)
+{
+	int	count;
+
+	count = 0;
+	if (n < 0)
+		count++;
+	if (n == 0)
+		count ++;
+	while (n != 0)
+	{
+		n /= 16;
+		count ++;
+	}
+	return (count);
+}
+
+int	ft_putnbr_hexa_upp(unsigned int n)
 {
 	char	*base_hexa;
 
@@ -20,4 +37,5 @@ void	ft_putnbr_hexa_upp(unsigned int n)
 	if (n > 15)
 		ft_putnbr_hexa_upp(n / 16);
 	ft_putchar_fd(base_hexa[n % 16], 1);
+	return (ft_ct(n));
 }

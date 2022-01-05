@@ -6,15 +6,13 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 15:39:51 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 11:56:09 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/05 13:42:08 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdarg.h>
 #include <unistd.h>
 #include "libft.h"
 #include "ft_printf.h"
-
-//int	return_val(format, arg);
 
 void ft_put_smth(va_list arg, const char *format)
 {
@@ -60,13 +58,6 @@ int	ft_printf(const char *format, ...)
 		i++;
 	}
 	va_end (arg);
-	return 0; // (ft_return(format, arg));
+	//
+	return 0;
 }
-/*
-   int	return_val(const char *format, va_list arg)
-   {
-
-
-
-   }
-   */
