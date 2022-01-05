@@ -6,7 +6,7 @@
 #    By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/21 15:51:28 by sle-huec          #+#    #+#              #
-#    Updated: 2021/12/31 14:18:36 by sle-huec         ###   ########.fr        #
+#    Updated: 2022/01/05 16:35:03 by sle-huec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,10 @@ SRC = ft_putnbr_unsigned.c \
 	  ft_printf.c \
 	  ft_putnbr_hexa.c \
 	  ft_putnbr_hexa_upp.c \
-	  ft_put_ptr.c
+	  ft_put_ptr.c \
+	  ft_putnbr.c \
+	  ft_putstr.c \
+	  ft_putchar.c
 
 OBJ = ${SRC:%.c=%.o}
 
