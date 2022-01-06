@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 15:39:51 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/06 13:31:53 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 15:44:05 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdarg.h>
@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
-int	ft_put_smth(va_list arg, const char *format)
+int	static	ft_put_smth(va_list arg, const char *format)
 {
 	int	i;
 	int	len;

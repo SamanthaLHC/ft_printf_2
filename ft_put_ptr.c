@@ -6,13 +6,13 @@
 /*   By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 13:49:59 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 14:11:13 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 15:45:09 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include "libft.h"
 
-int	ft_cnt(unsigned long int n)
+int	static	ft_cnt(unsigned long int n)
 {
 	int	count;
 
@@ -29,7 +29,7 @@ int	ft_cnt(unsigned long int n)
 	return (count);
 }
 
-void	ft_put_hexa(unsigned long int n)
+void	static	ft_put_hexa(unsigned long int n)
 {
 	char	*base_hexa;
 

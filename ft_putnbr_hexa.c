@@ -6,13 +6,13 @@
 /*   By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 13:38:25 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 13:52:34 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 15:47:07 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include "libft.h"
 
-int	ft_count(unsigned int n)
+int	static	ft_count(unsigned int n)
 {
 	int	count;
 
