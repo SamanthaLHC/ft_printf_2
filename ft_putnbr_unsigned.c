@@ -17,8 +17,6 @@ int	static	ft_cont(unsigned int n)
 	int	count;
 
 	count = 0;
-	if (n < 0)
-		count++;
 	if (n == 0)
 		count ++;
 	while (n != 0)
