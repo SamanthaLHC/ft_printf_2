@@ -6,7 +6,7 @@
 /*   By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:59:46 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 16:39:41 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 13:40:18 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -14,5 +14,7 @@
 
 int	ft_putstr(char *s)
 {
+	if (s == NULL)
+		return (ft_putstr("(null)"));
 	return (write(1, s, ft_strlen(s)));
 }

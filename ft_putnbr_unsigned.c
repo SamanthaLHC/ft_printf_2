@@ -6,7 +6,7 @@
 /*   By: sle-huec <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 13:38:43 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 14:12:50 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 13:54:32 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -23,7 +23,7 @@ int	ft_cont(unsigned int n)
 		count ++;
 	while (n != 0)
 	{
-		n /= 16;
+		n /= 10;
 		count ++;
 	}
 	return (count);
