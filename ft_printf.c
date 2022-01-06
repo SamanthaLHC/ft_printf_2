@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 15:39:51 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/01/05 17:24:06 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/01/06 12:21:22 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdarg.h>
@@ -54,10 +54,10 @@ int	ft_printf(const char *format, ...)
 	while (format[i])
 	{	
 		if (format[i] != '%')
-			len = ft_putchar(format[i]);
+			len += ft_putchar(format[i]);
 		if (format[i] == '%')
 		{
-			len = ft_put_smth(arg, &format[i + 1]);
+			len += ft_put_smth(arg, &format[i + 1]);
 			i++;
 		}
 		i++;
